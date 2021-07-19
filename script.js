@@ -1,0 +1,1 @@
+alert("Promoções imperdíveis Black Friday!");
