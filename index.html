@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Mayara Romao" content="Desafio Gama Academy" />
+    <title>Desafio 1 | Gama Academy</title>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+    <script type="text/javascript" src="script.js">
+    </script>
+
+    <style>
+        .card-conteiner {
+            margin: 20px;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .rodape {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text-rodape {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .ilustracao {
+            margin: 10px;
+            border-radius: 5px;
+            width: 250px;
+
+        }
+
+        .titulo {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        .logotipo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .description {
+            text-align: center;
+            margin: 2px;
+            font-size: 20px;
+        }
+
+        .price {
+            font-weight: 600;
+        }
+
+        .bloco-post {
+            justify-content: space-between;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            flex-basis: 50px;
+            flex-grow: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+
+        <div class="logotipo">
+            <img src="blackfriday.png" width="500px" alt="Logo da Página" title="Logo da Página" />
+        </div>
+
+    </header>
+    <!-- Fim do Cabeçalho -->
+
+    <!-- Conteúdo principal-->
+    <main>
+
+        <h1>Promoções de Black Friday</h1>
+
+        <p>Inscreva-se para receber nossas promoções:</p>
+
+        <form action="local que recebe os dados url" method="POST">
+
+            <fieldset>
+                <label for="campo1">Nome</label>
+                <input type="text" name="nome" id="campo1" />
+
+                <label for="campo2">E-mail</label>
+                <input type="text" name="nome" id="campo2" />
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Interesses de recebimento</legend>
+
+                <label for="campo41">Cupons de desconto</label>
+                <input type="checkbox" name="interesse3" value="1" id="campo41">
+
+                <label for="campo42">Novidades</label>
+                <input type="checkbox" name="interesse3" value="2" id="campo42">
+
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar" />
+
+        </form> <br>
+
+        <h2>Alguns de Nossos Produtos</h2>
+
+        <div class="card-conteiner">
+
+            <div class="bloco-post" id="div1">
+                <img class="ilustracao" src="terrarioStarWars.jpg" width="250px 250px" alt="Terrário Star Wars"
+                    title="Terrário Star Wars" class="img-post" />
+                <h3 class="titulo">Terrario Star Wars</h3>
+                <span class="price">De: <s>200,00</s> <br>
+                    Por: 100,00
+                </span>
+                <p class="description">50% de Desconto!</p>
+                <button class="button">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="bloco-post" id="div2">
+                <img class="ilustacao" src="terrarioArvore.jpg" width="250px 250px" alt="Terrário Arvore"
+                    title="Terrario Arvore" class="img-post" />
+                <h4 class="titulo">Terrario Arvore</h4>
+                <span class="price"> De: <s>300,00</s> <br>
+                    Por: 150,00
+                </span> <br>
+                <p class="description">50% de Desconto!</p>
+                <button class="button">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+
+        <p>
+            Para ver mais do nosso catálogo de produtos e promoções,
+            <a href="https://google.com" title="Abrir catalogo de produtos">clique aqui e aproveite!
+            </a>
+        </p>
+
+        <a href="https://google.com" title="Site do Google" target="_blank">
+        </a>
+
+    </main>
+
+
+</body>
+<footer>
+    <div class="rodapé">
+    <fieldset>
+        <p class="text-rodape">Feito por Mayara Romão - 1º Desafio Hiring Coders - Gama Academy - 2021</p>
+    </fieldset>
+    </div>
+</footer>
+
+</html>
